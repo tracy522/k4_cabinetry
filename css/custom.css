@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****** Generic Classes *********/
+/*Generic classes (body, a, p, h1, etc.)*/
+.container {padding:5%;}
+.left {float:left;}
+.right {float:right;}
+.ctr-content {text-align: center;}
+
+.no-list {list-style-type:none;}
+.accent-1 {
+	background-color:#96A480;
+	color: white;
+}
+
+.accent-2 {
+	background-color:#BEBEBE;
+}
+
+.accent-graph {
+	background-image: url("../assets/images/graph_paper.png");
+ 	background-color: #cccccc;
+	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: auto;
+}
+
+.accent-wood {
+	background-image: url("../assets/images/trees.jpg");
+ 	background-color: #cccccc;
+	background-position: center; 
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: auto;
+}
+
+.basic {
+	background-color:white;
+}
+
+.basic-text {
+	color:white;
+}
+
+body {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+i {
+	color:white;
+}
+
+@media (max-width:480px) {
+	body {
+		text-align:center;
+	}
+	.mobile-hide {
+		display:none;
+	}
+	i {
+	font-size: large;
+	}
+	.feedback {
+		text-align:center;
+	}
+}
+
+/****** nav menu *********/
+
+/****** main content *********/
+.bold-link:link {
+	color:#96A480;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.bold-link:visited {
+	color:#21311b;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.bold-link:hover {
+	color:#434343;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.container-row {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.feedback {
+}
+
+.intro-box {
+	background:white;
+	margin: 2em;
+	padding:3em;
+	text-align:left;
+}
+
+.intro-box>img {
+		margin: 1em 0 1em 0;
+}
+
+
+.review-icon {
+	width:90px;
+}
+
+.show {
+  display: block;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+.vivid {
+	color: #89A84F;
+	font-weight: bold;
+}
+/****** footer *********/
+footer {
+	background-color:#96A480;
+	color:#D6D6D6;
+}
