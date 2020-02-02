@@ -3,14 +3,15 @@
 
 /****** Generic Classes *********/
 /*Generic classes (body, a, p, h1, etc.)*/
+:root {
+	--main-acct-color: #0E4201;
+}
 .container {padding:5%;}
-.left {float:left;}
-.right {float:right;}
+
 .ctr-content {text-align: center;}
 
-.no-list {list-style-type:none;}
 .accent-1 {
-	background-color:#96A480;
+	background-color:var(--main-acct-color);
 	color: white;
 }
 
@@ -32,6 +33,7 @@
  	background-color: #cccccc;
 	background-position: center; 
   	background-repeat: no-repeat;
+	background-attachment: fixed;
   	background-size: cover;
 	height: auto;
 }
@@ -44,38 +46,39 @@
 	color:white;
 }
 
+.quote {
+	text-align:center;
+}
+.quote em {
+	float:right;
+}
+
 body {
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+ 	font-family: 'Rokkitt', serif;
 }
 
 h2 {
 	text-transform: uppercase;
+	font-size: 4em !important;
+	text-shadow: 3px 3px 4px black;
 }
 
 i {
 	color:white;
-}
-
-@media (max-width:480px) {
-	body {
-		text-align:center;
-	}
-	.mobile-hide {
-		display:none;
-	}
-	i {
-	font-size: large;
-	}
-	.feedback {
-		text-align:center;
-	}
+	font-size: 1.5em;
 }
 
 /****** nav menu *********/
-
+.nav-item {
+	text-align: right;
+}
 /****** main content *********/
 .bold-link:link {
-	color:#96A480;
+	color:var(--main-acct-color);
 	font-weight: bold;
 	font-size: 1.5em;
 }
@@ -95,9 +98,17 @@ i {
 	padding-bottom: 5em;
 }
 
+.container-col {
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
 .feedback {
 }
 
+.footer-row {
+	padding: 2em;
+}
 .intro-box {
 	background:white;
 	margin: 2em;
@@ -106,29 +117,119 @@ i {
 }
 
 .intro-box>img {
-		margin: 1em 0 1em 0;
+	margin: 1em 0 1em 0;
 }
 
+.no-list {
+	list-style: none;
+}
+
+.plain-link {
+	color:black;
+	text-decoration:none;
+}
+
+.review-button {
+	max-width:100%;
+}
 
 .review-icon {
-	width:90px;
+	max-width:100%;
 }
 
-.show {
-  display: block;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
+.vendor-icon {
+	width: 200px;
+	height: 200px;
+	background-color:black;
+	margin:1em;
 }
 
 .vivid {
-	color: #89A84F;
+	color: var(--main-acct-color);
 	font-weight: bold;
 }
 /****** footer *********/
-footer {
-	background-color:#96A480;
+#footer {
+	background-color:var(--main-acct-color);
 	color:#D6D6D6;
+}
+
+#social_links {
+	padding:0;
+}
+
+.btn-social {
+	width:100%;
+}
+.btn-social:hover {
+	opacity:0.5;
+}
+
+.col {
+	padding:0 !important;
+}
+
+
+/****** gallery with filters ******/
+.btn-filter {
+	background-color: #858685;
+	color: white;
+	margin:.25em;
+	padding:2%;
+	border-radius: 3px;
+	width:100%;
+	border:none;
+}
+
+.btn-filter:hover {
+	opacity:0.5;	
+}
+
+.btn-filter:focus {
+	background-color: var(--main-acct-color);
+	box-shadow: none !important;
+	outline:0;
+}
+
+.column {
+  display: none; /* Hide columns by default */
+  margin: 2em;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* responsive instructions */
+
+/* tablet and larger */
+@media (min-width:481px) {
+	.btn-filter {
+		text-align:right !important;
+	}
+	#filterButtons {
+		margin-top:2em;
+	}
+}
+
+/* mobile phones */
+@media (max-width:480px) {
+	h1, h2, h3, h4, h5, p {
+		text-align: center !important;
+	}
+	h2 {
+	font-size: 2em !important;
+	}
+	.mobile-hide {
+		display:none;
+	}
+	.quote em {
+	float:none;
+	}
+	.accent-wood {
+	background-image: url("../assets/images/trees_mobile.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+	}
 }
