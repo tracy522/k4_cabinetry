@@ -109,6 +109,17 @@ i {
 .footer-row {
 	padding: 2em;
 }
+
+.contact-block a{
+	text-decoration:none;
+	color:white;
+}
+
+.contact-block a:hover {
+	opacity:0.3;
+	color:black;
+}
+
 .intro-box {
 	background:white;
 	margin: 2em;
@@ -201,6 +212,9 @@ i {
   display: block;
 }
 
+.content img {
+  image-orientation: from-image;
+}
 /* responsive instructions */
 
 /* tablet and larger */
