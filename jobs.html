@@ -54,6 +54,9 @@ $(function(){
 	</ul>
 		We are a small, family-owned business that values the creativity of our employees! If you're interested in working with us, please submit this form. 
 	</p>
+		<div>
+			<img src="assets/images/Kitchen/Woodside Ave-6.jpg" alt="Beautiful Kitchen Cabinets" width="100%">
+		</div>
 	</div>
 	<div class="col-md-4 accent-1 p-5">
 		<form action="https://formspree.io/tracyporter522@gmail.com" method="post" enctype="multipart/form-data" onsubmit="">
@@ -71,12 +74,27 @@ $(function(){
 				<input type="email" class="form-control" id="userEmail" name="Email" placeholder="Enter email" required>
 			</div>
 			<div class="form-group">
-				<label for="moreInfo">Anything else we should know about you?</label>
-				<textarea class="form-control" id="moreInfo" rows="3" name="Info"></textarea>
+				<label for="userExperience">Experience (check all that apply)</label><br>
+				<input type="checkbox" name="experience" value="assembly" id="assembly">
+				<label for="assembly">Shop: Assembly</label><br>
+				<input type="checkbox" name="experience" value="spray" id="spray">
+				<label for="spray">Shop: Spray</label><br>
+				<input type="checkbox" name="experience" value="door" id="door">
+				<label for="door">Shop: Door</label><br>
+				<input type="checkbox" name="experience" value="cAndC" id="cAndC">
+				<label for="cAndC">Shop: C & C</label><br>
+				<input type="checkbox" name="experience" value="custom" id="custom">
+				<label for="custom">Shop: Custom</label><br>
+				<input type="checkbox" name="experience" value="installation" id="installation">
+				<label for="installation">Installation</label><br>
+				<input type="checkbox" name="experience" value="office" id="office">
+				<label for="office">Office</label><br>
+				<input type="checkbox" name="experience" value="sales" id="sales">
+				<label for="sales">Sales & Design</label><br>
 			</div>
 			<div class="form-group">
-				<label for="resume">Upload your resume.</label>
-				<input type="file" class="form-control-file" name="upload" id="resume" required>
+				<label for="moreInfo">Anything else we should know about you?</label>
+				<textarea class="form-control" id="moreInfo" rows="3" name="Info"></textarea>
 			</div>
 			<div class="ctr-content">				
 				<button type="submit" class="btn btn-outline-light btn-lg btn-block">Submit</button>
