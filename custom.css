@@ -150,9 +150,13 @@ i {
 
 .vendor-icon {
 	width: 200px;
-	height: 200px;
-	background-color:black;
+	height: auto;
+	background-color:white;
 	margin:1em;
+}
+
+.vendor-icon img {
+	max-width:100%;
 }
 
 .vivid {
